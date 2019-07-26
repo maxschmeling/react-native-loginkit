@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.author                 = "Max Schmeling"
   s.platforms              = { :ios => "10.0" }
   s.source                 = source
-  s.source_files           = "./ios/ReactNativeLoginKit/*.{h,m,swift}"
+  s.source_files           = "ios/**/*.{h,m,swift}"
   # s.preserve_paths         = "package.json", "LICENSE"
   # s.header_dir             = "ReactNativeLoginKit"
 
