@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5093835022EB7CBD0044E379 /* SnapchatLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093834F22EB7CBD0044E379 /* SnapchatLoginManager.swift */; };
+		5093835222EB7D1C0044E379 /* SnapchatLoginManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5093835122EB7D1C0044E379 /* SnapchatLoginManagerBridge.m */; };
 		50D8C70F22EA180B005E1D54 /* ReactNativeLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D8C70522EA180B005E1D54 /* ReactNativeLoginKit.framework */; };
 		50D8C71422EA180B005E1D54 /* ReactNativeLoginKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8C71322EA180B005E1D54 /* ReactNativeLoginKitTests.swift */; };
 		50D8C71622EA180B005E1D54 /* ReactNativeLoginKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D8C70822EA180B005E1D54 /* ReactNativeLoginKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5093834F22EB7CBD0044E379 /* SnapchatLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatLoginManager.swift; sourceTree = "<group>"; };
+		5093835122EB7D1C0044E379 /* SnapchatLoginManagerBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnapchatLoginManagerBridge.m; sourceTree = "<group>"; };
 		50D8C70522EA180B005E1D54 /* ReactNativeLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactNativeLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D8C70822EA180B005E1D54 /* ReactNativeLoginKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeLoginKit.h; sourceTree = "<group>"; };
 		50D8C70922EA180B005E1D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				50D8C70822EA180B005E1D54 /* ReactNativeLoginKit.h */,
 				50D8C70922EA180B005E1D54 /* Info.plist */,
+				5093834F22EB7CBD0044E379 /* SnapchatLoginManager.swift */,
+				5093835122EB7D1C0044E379 /* SnapchatLoginManagerBridge.m */,
 			);
 			path = ReactNativeLoginKit;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					50D8C70422EA180B005E1D54 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					50D8C70D22EA180B005E1D54 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5093835222EB7D1C0044E379 /* SnapchatLoginManagerBridge.m in Sources */,
+				5093835022EB7CBD0044E379 /* SnapchatLoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		50D8C71A22EA180B005E1D54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.maxschmeling.ReactNativeLoginKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +377,7 @@
 		50D8C71B22EA180B005E1D54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +403,7 @@
 		50D8C71D22EA180B005E1D54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M7CWXVBNU;
 				INFOPLIST_FILE = ReactNativeLoginKitTests/Info.plist;
@@ -409,6 +422,7 @@
 		50D8C71E22EA180B005E1D54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M7CWXVBNU;
 				INFOPLIST_FILE = ReactNativeLoginKitTests/Info.plist;
