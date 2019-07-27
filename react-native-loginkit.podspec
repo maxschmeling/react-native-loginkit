@@ -29,8 +29,6 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "10.0" }
   s.source                 = source
   s.source_files           = "ios/**/*.{h,m,swift}"
-  # s.preserve_paths         = "package.json", "LICENSE"
-  # s.header_dir             = "ReactNativeLoginKit"
 
   s.dependency "SnapSDK/SCSDKLoginKit", "1.3.2"
   s.dependency "React"
