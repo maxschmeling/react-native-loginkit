@@ -8,8 +8,8 @@
 
 import SCSDKLoginKit
 
-@objc(SnapLoginManager)
-class SnapLoginManager: NSObject {
+@objc(SnapchatLoginManager)
+class SnapchatLoginManager: NSObject {
   @objc func login(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
    DispatchQueue.main.async {
      let viewController: UIViewController = UIApplication.shared.windows[0].rootViewController!;

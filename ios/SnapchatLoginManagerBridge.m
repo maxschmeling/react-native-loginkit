@@ -1,6 +1,6 @@
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_MODULE(SnapLoginManager, NSObject)
+@interface RCT_EXTERN_MODULE(SnapchatLoginManager, NSObject)
 
 + (BOOL)requiresMainQueueSetup
 {
