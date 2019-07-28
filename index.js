@@ -1,3 +1,5 @@
-module.exports = function loginKit() {
-  console.log("It works!");
-}
+const { NativeModules } = require("react-native");
+
+const { SnapchatLoginManager } = NativeModules;
+
+module.exports.login = SnapchatLoginManager.login;
