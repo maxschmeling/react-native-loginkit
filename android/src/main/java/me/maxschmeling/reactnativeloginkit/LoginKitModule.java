@@ -29,7 +29,7 @@ public class LoginKitModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void login(Promise callback) {
+    public void login(final Promise promise) {
         final LoginStateController.OnLoginStateChangedListener loginStateChangedListener =
             new LoginStateController.OnLoginStateChangedListener() {
             @Override
