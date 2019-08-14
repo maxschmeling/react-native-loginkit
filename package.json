@@ -3,7 +3,11 @@
   "version": "1.0.0-pre",
   "description": "Login with Snapchat in ReactNative (iOS and Android).",
   "main": "index.js",
-  "repository": "https://github.com/maxschmeling/react-native-loginkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxschmeling/react-native-loginkit.git",
+    "baseUrl": "https://github.com/maxschmeling/react-native-loginkit"
+  },
   "author": "Max Schmeling <max@maxschmeling.me>",
   "license": "MIT"
 }
