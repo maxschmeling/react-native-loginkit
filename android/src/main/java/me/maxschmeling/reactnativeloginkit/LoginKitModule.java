@@ -27,7 +27,7 @@ public class LoginKitModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "LoginKit";
+        return "SnapchatLoginManager";
     }
 
     public static ReactPackage getPackage() {
