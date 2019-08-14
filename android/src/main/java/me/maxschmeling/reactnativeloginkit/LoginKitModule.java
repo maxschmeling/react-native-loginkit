@@ -5,18 +5,18 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
-public class CreativeKitModule extends ReactContextBaseJavaModule {
+public class LoginKitModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
 
-    public CreativeKitModule(ReactApplicationContext reactContext) {
+    public LoginKitModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "CreativeKit";
+        return "LoginKit";
     }
 
     @ReactMethod
