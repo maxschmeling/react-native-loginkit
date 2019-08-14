@@ -2,6 +2,8 @@ package me.maxschmeling.reactnativeloginkit;
 
 import androidx.annotation.Nullable;
 
+
+import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
