@@ -3,8 +3,8 @@ module.exports = {
     platforms: {
       ios: {},
       android: {
-        packageInstance: 'LoginKitModule.getPackage()',
-        packageImportPath: 'import me.maxschmeling.reactnativeloginkit.LoginKitModule;'
+        packageInstance: 'new LoginKitPackage()',
+        packageImportPath: 'import me.maxschmeling.reactnativeloginkit.LoginKitPackage;'
       }
     },
     assets: [],
