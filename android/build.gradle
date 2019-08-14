@@ -46,10 +46,17 @@ repositories {
         // https://github.com/facebook/react-native/blob/0.59-stable/template/android/build.gradle#L30
         url "$projectDir/../node_modules/react-native/android"
     }
+    maven {
+        url "https://raw.githubusercontent.com/Snap-Kit/release-maven/repo"
+    }
     mavenCentral()
 }
 
 dependencies {
+    implementation([
+        'com.snapchat.kit.sdk:login:1.1.4',
+        'com.snapchat.kit.sdk:core:1.1.4'
+    ])
     implementation "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
 }
 
