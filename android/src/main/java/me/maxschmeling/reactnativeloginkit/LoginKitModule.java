@@ -30,10 +30,6 @@ public class LoginKitModule extends ReactContextBaseJavaModule {
         return "SnapchatLoginManager";
     }
 
-    public static ReactPackage getPackage() {
-        return new LoginKitPackage();
-    }
-
     @ReactMethod
     public void login(final Promise promise) {
         final LoginStateController.OnLoginStateChangedListener loginStateChangedListener =
