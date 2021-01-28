@@ -34,20 +34,13 @@ class SnapchatLoginManager: NSObject {
            }
            let externalId = me["externalId"] as? String
 
-           SCSDKLoginClient.getAccessToken(completion: { (token, error) in
-             if error != nil {
-               // TODO: Check with Snapchat about this always getting called once.
-
-               // reject("UNKNOWN", error!.localizedDescription, nil);
-             } else {
-               resolve([
-                 "displayName": displayName,
-                 "bitmojiAvatarUrl": bitmojiAvatarUrl,
-                 "externalId": externalId,
-                 "accessToken": token
-                 ]);
-             }
-           });
+           let token = SCSDKLoginClient.getAccessToken()
+           resolve([
+             "displayName": displayName,
+             "bitmojiAvatarUrl": bitmojiAvatarUrl,
+             "externalId": externalId,
+             "accessToken": token
+           ]);
          }, failure: { (error: Error?, isUserLoggedOut: Bool) in
            reject("UNKNOWN", error!.localizedDescription, nil);
          });
