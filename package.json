@@ -17,8 +17,9 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/react-native": "^0.61.21",
+    "prettier": "^2.2.1",
     "react-native": "^0.61.4",
-    "typescript": "^3.8.3",
-    "@types/react-native": "^0.61.21"
+    "typescript": "^3.8.3"
   }
 }
