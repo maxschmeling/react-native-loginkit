@@ -1,6 +1,6 @@
 {
   "name": "react-native-loginkit",
-  "version": "0.0.1-pre",
+  "version": "1.0.0",
   "description": "Login with Snapchat in ReactNative (iOS and Android).",
   "main": "lib/index.js",
   "scripts": {
